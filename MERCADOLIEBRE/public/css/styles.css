@@ -6,124 +6,257 @@
     --gris-oscuro: #666;
     --gris-claro: #ebebeb;
     --verde: #39b54a;
-}
-
-/* Estilos para el header */
-header {
+  }
+  
+  body{
+    font-family: "Roboto", sans-serif;
+    background-color: var(--gris-claro);
+  }
+  section.main__titulo-h3{
+    display: flex;
+  }
+  div.main__product{
+    display: flex;
+    position: relative;
+  }
+  
+  h3{
+    font-size: 24px;
+  }
+  
+  p{
+    font-size: 16px;
+  }
+  
+  div top-header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10%;
+  }
+  
+  header div .top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  header {
     background-color: var(--amarillo);
     padding: 12px;
     color: black;
-}
-
-header .logo img {
-    width: 150px;
-    padding: 10px;
-}
-
-header .search-bar input {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    box-sizing: border-box;
-    margin-top: 10px;
-}
-
-header .installments {
-    margin-top: 5px;
-    background-color: var(--amarillo);
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-header nav ul {
-    list-style-type: none;
-    padding: 0;
+    width: 1500px;
+    height: 200px;
     display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-header nav ul li {
-    flex: 1;
-}
-
-header nav ul li a {
+  }
+  
+  header{
+    background-color: var(--amarillo);
+  }
+  
+  header img {
+    width: 20%;
+    display: flex;
+  }
+  header form{
+    width: 70px;
+    background-color: #FFF;
+  }
+  
+  header form{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+  }
+  header nav{
+    font-size: 12px;
+    margin-left: 20px;
+  }
+  
+  header ul li{
+    list-style-type: none;
+  }
+  
+  header ul li a{
     text-decoration: none;
-    color: black;
-    background-color: var(--amarillo);
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-    
-}
-
-header nav ul li a:hover {
+    color: #000;
+  }
+  
+  div.submit{
     background-color: var(--gris-claro);
-    color: var(--azul);
-}
-
-/*cuerpo*/
-body {
-    font-family: 'Roboto', sans-serif;
+    padding: 8px;
+    border-radius: 5px;
+    width: 500px;
+    height: 25px;
+  }
+  div.submit p{
+    font-size: 15px;
     margin: 0;
-    padding: 0;
-}
-
-/* Banner */
-.banner img {
+  }
+  div.submit i{
+    vertical-align: auto;
+  }
+  
+  .header__menu {
+    background-color: #0044AA;
+      border-radius: 5px;
+      color: #FFF;
+      font-size: 20px;
+      height: 20px;
+      margin: 10px 0px 20px 0px;
+      padding: 10px;
+      width: 20px;
+      align-self: flex-end;
+      margin-top: auto;
+  }
+    
+  article {
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+    margin: 20px 0 0;
+  }
+  
+  div.offers
+  {
+    font-size: 18px;
+    width: 50%;
+  }
+  
+  p.price{
+    font-size: 18px;
+  }
+  
+  p.discount{
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .description{
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 20px;
+  }
+  
+  .description{
+    color: var(--gris-oscuro);
+  }
+  
+  section.banner img{
     width: 100%;
+  }
+  
+  main{
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+  }
+  
+  
+  main section article i,
+  .discount{
+    color: #39b54a;
+  }
+  
+  main section article i{
     display: block;
-    margin-top: 10px;
-}
-
-/* Sección de productos */
-main section {
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--verde);
+    background-color: #FFF;
+    border-radius: 50%;
+    right: 20px;
+    top: -15px;
+  }
+  
+  main section h3{
+    margin: 20px 0px;
+    color: var(--gris-oscuro)
+  }
+  
+  div.main__product__details {
+  
+    border-top: 1px solid var(--gris-claro);
     padding: 10px;
-}
-
-.titulares-h2 {
-    background-color: var(--amarillo);
-    padding: 20px;
-    font-size: 24px;
-}
-
-main section div {
-    background-color: var(--gris-claro);
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-main section div img {
-    max-width: 100px;
-    display: block;
-    margin: 0 auto 10px auto;
-}
-
-main section div p {
-    margin: 5px 0;
-}
-
-/* Estilos para el footer */
-footer {
+    font-size: 16px;
+  }
+  
+  img.product_img {
+  
+    width: 150px;
+    height: 150px;
+  }
+  
+  footer {
     background-color: var(white);
     color: grey;
-    padding: 10px;
-}
-
-footer h4 {
-    margin: 5 5 10px 0;
+    display: flex;
+    width: 10px;
+    height: 50px;
+  }
+  
+  footer div.element-footer {
     text-align: center;
-}
-
-footer p {
-    margin: 5px 0;
-    text-align: center;
-    max-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
+  }
+  
+  footer p {
+    width: 210px;
+    height: 100px;
     word-wrap: break-word;
+    text-align: center;
+    font-size: 10px;
+  }
+  
+  footer h4 {
+    font-size: 16px;
+  }
+  
+  footer i{
+    color: var(--celeste);
+    size-adjust: 2em;
+  }
+  
+  footer div.element-footer-copy{
+    align-self: flex-end;
+  }
+  
+  
+  @media (min-width: 361px){
+    main section article .description{
+        display: block;
+    }
+  
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+  
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
     
-}
+    main section div.products article{
+        width: 45%;
+    }
+  
+    .price,
+    .discount{
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 769px){
+    main section div.products article{
+        width: 22%;
+    }
+  }
